@@ -1,4 +1,5 @@
 /* Reset de propriedades */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,59 +8,64 @@
 
 /* Mobile First - CSS do mobile */
 
-body{
+body {
     color: grey;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: 'Lato', sans-serif;
 }
-header{
+
+header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     background-color: black;
     padding: 5px 5px 0 5px;
 }
-header nav{
-    display: none;
-}
-main{
+
+main {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 15px;
 }
-header i{
+
+header i {
     font-size: 2em;
     color: white;
 }
-header img{
+
+header img {
     height: 55px;
     margin-right: calc(50% - 48.5px);
 }
-#sessao-principal{
+
+#sessao-principal {
     padding-bottom: 15px;
     border-bottom: 2px dotted grey;
 }
-#sessao-principal figure{
+
+#sessao-principal figure {
     display: flex;
     justify-content: center;
 }
-#sessao-principal figure img{
+
+#sessao-principal figure img {
     height: 150px;
     margin-left: -20px;
 }
 
-#sessao-principal article h1{
+#sessao-principal article h1 {
     width: 80%;
     margin-top: 15px;
     color: orangered;
     font-size: 1.6rem;
 }
-#sessao-principal article p{
+
+#sessao-principal article p {
     width: 90%;
     margin-top: 15px;
-   
 }
-#sessao-principal article a{
 
+#sessao-principal article a {
     padding: 10px 20px;
     margin-top: 15px;
     background-color: orangered;
@@ -67,45 +73,70 @@ header img{
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
-   
 }
-#produtos{
+
+#produtos {
     margin-top: 15px;
 }
-#produtos article h2{
+
+#produtos article h2 {
     font-size: 0.8rem;
     background-color: orangered;
     color: white;
     padding: 4px;
 }
-#produtos article{
+
+#produtos article {
     border: 0.2px solid grey;
 }
-#produtos article img{
+
+#produtos article img {
     float: left;
-    margin:  10px;
+    margin: 10px;
 }
-#produtos article p{
+
+#produtos article p {
     font-size: 0.8rem;
     padding: 10px;
 }
-footer{
+
+footer {
     padding: 5px;
     background-color: black;
     margin-top: 9%;
 }
-footer img{
- margin-top: -20px;
+
+footer img {
+    margin-top: -20px;
 }
-footer p{
+
+footer p {
     text-align: center;
     font-size: 0.8rem;
     width: 80%;
     margin: 0 auto;
 }
 
-
-
-@media screen and (min-width: 768px){
-
+header nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 0 10%;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
 }
+
+header nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    background-color: orangered;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {}
